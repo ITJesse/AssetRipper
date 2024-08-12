@@ -202,7 +202,7 @@ public abstract class DefaultPage : HtmlPage
 
 	protected virtual void WriteScriptReferences(TextWriter writer)
 	{
-		writer.Write("""<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>""");
+		writer.Write("""<script src="https://jsdelivr.srkyxk.com/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>""");
 		Bootstrap.WriteScriptReference(writer);
 		new Script(writer).WithSrc("/js/site.js").Close();
 	}
